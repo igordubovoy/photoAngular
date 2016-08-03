@@ -1,0 +1,70 @@
+.gallery {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    margin-top: 36px;
+    text-align: center;
+    & div:first-child {
+        margin-left: 10px;
+    }
+}
+.img_wrapper {
+  width: 348px;
+  height: 232px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  margin: 5px 10px 10px 10px;
+}
+.preview {
+  transition: 1.1s;
+  &:hover {
+    transform: scale(1.2, 1.2);
+    left: 0;
+  }
+  &::before {
+    content: none;
+  }
+}
+.gallery_image {
+    width: 348px;
+    height: 270px;
+    display: inline-block;
+    margin: 10px 3px 0 3px;
+    background-repeat: no-repeat;
+
+}
+.signature {
+    color: rgb(154, 239, 244);
+    padding-top: 4px;
+    position: absolute;
+    top: 85%;
+    right: 5%;
+    opacity: 0;
+    transition: 1.1s;
+}
+.img_wrapper:hover > .signature {
+  opacity: 1;
+}
+
+.h4_signature {
+    margin: 0;
+    text-align: right;
+    font-size: 1.1em;
+    font-weight: normal;
+    font-family: 'opengost_b';
+}
+
+.h4_signature.names {
+    text-transform: uppercase;
+    color: #000;
+}
+
+.h4_signature.date {
+    font-style: italic;
+    color: #808080;
+}
+
+.and {
+    text-transform: lowercase;
+}

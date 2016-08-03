@@ -1,0 +1,19 @@
+{
+  "name": "myProjectAngular",
+  "version": "1.0.0",
+  "description": "Photographer Victoria Dubovaya",
+  "authors": [
+    "Igor Dubovoy <ihor.dubovyi@globallogic.com>"
+  ],
+  "moduleType": [
+  "globals"
+  ],
+  "ignore": [
+  "node_modules",
+  "bower_components"
+  ],
+  "dependencies": {
+    "angular": "~1.5.7",
+    "angular-route": "~1.5.7"
+  }
+}

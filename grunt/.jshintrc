@@ -1,0 +1,75 @@
+{
+  "bitwise":       true,
+  "camelcase":     true,
+  "curly":         true,
+  "eqeqeq":        true,
+  "es3":           true,
+  "forin":         false,
+  "freeze":        true,
+  "funcscope":     true,
+  "futurehostile": true,
+  "globalstrict":  false, //! use strict added automatically during build process
+  "iterator":      true,
+  "latedef":       false, //!! set to true, check wornings
+  "maxcomplexity": 50,//!! try set 30
+  "maxdepth":      3,//!! try set 2
+  "maxerr":        10,
+  "maxparams":     12,
+  "maxstatements": 110, //!!- try to set 10, problem with big classes
+  "noarg":         true,
+  "nocomma":       true,
+  "nonbsp":        true,
+  "nonew":         true,
+  "notypeof":      true,
+  "quotmark":      "single",
+  "shadow":        "inner",
+  "singleGroups":  false, //!! set to true, investagate
+  "undef":         true,
+  "sub":           true,
+  "supernew":      true,
+  "validthis":     true,
+  "withstmt":      true,
+
+  "globals": {
+    "alert":          false,
+    "Blob":           false,
+    "chrome":         false,
+    "clearInterval":  false,
+    "clearTimeout":   false,
+    "confirm":        false,
+    "console":        false,
+    "document":       false,
+    "JSON":           false,
+    "localStorage":   false,
+    "location":       false,
+    "navigator":      false,
+    "prompt":         false,
+    "screen":         false,
+    "sessionStorage": false,
+    "setInterval":    false,
+    "setTimeout":     false,
+    "WebSocket":      false,
+    "window":         false,
+    "XMLHttpRequest": false,
+
+    "afterAll":       false,
+    "afterEach":      false,
+    "angular":        false,
+    "beforeAll":      false,
+    "beforeEach":     false,
+    "describe":       false,
+    "expect":         false,
+    "it":             false,
+    "module":         false,
+    "require":        false,
+    "spyOn":          false,
+
+    "Components":     false,
+    "APP_STARTUP":    false,
+    "APP_SHUTDOWN":   false,
+
+    "swc":            false,
+    "AvayaClientServices": false,
+    "$":              false
+  }
+}
