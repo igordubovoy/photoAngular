@@ -8,14 +8,14 @@
   "freeze":        true,
   "funcscope":     true,
   "futurehostile": true,
-  "globalstrict":  false, //! use strict added automatically during build process
+  "globalstrict":  false,
   "iterator":      true,
-  "latedef":       false, //!! set to true, check wornings
-  "maxcomplexity": 50,//!! try set 30
-  "maxdepth":      3,//!! try set 2
+  "latedef":       false,
+  "maxcomplexity": 50,
+  "maxdepth":      3,
   "maxerr":        10,
   "maxparams":     12,
-  "maxstatements": 110, //!!- try to set 10, problem with big classes
+  "maxstatements": 75,
   "noarg":         true,
   "nocomma":       true,
   "nonbsp":        true,
@@ -23,7 +23,7 @@
   "notypeof":      true,
   "quotmark":      "single",
   "shadow":        "inner",
-  "singleGroups":  false, //!! set to true, investagate
+  "singleGroups":  false,
   "undef":         true,
   "sub":           true,
   "supernew":      true,
