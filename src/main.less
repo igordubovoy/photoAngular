@@ -172,14 +172,19 @@ address {
 
 body {
     font-family: 'opengost_a';
+    header {
+        height: 128px;
+        width: 100%;
+        background-image: url(../../assets/image/logo/logo_120px-hight.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .wrapper {
+        border-top: solid 1px #f0f0f0;
+        margin-top: 36px;
+    }
 }
-header {
-    height: 128px;
-    width: 100%;
-    background-image: url(../../assets/image/logo/logo_120px-hight.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-:before {
+
+::before {
   content: none;
 }

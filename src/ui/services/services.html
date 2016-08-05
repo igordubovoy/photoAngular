@@ -1,29 +1,32 @@
-<div ng-controller="servicesCtrl as services" class="services">
-  <h1 class="h1_services"> {{ services.wedding.mainHeader }} </h1>
-  <div class="services_block" ng-repeat="block in services.wedding.list">
-    <img ng-src=" {{ block.imgUrl }} " alt="{{ services.wedding.mainHeader }}" />
-    <div class="services_text">
-      <p><span class="services_general_text"> {{ block.header }} </span>
-        <ul>
-          <li ng-repeat="elem in block.servicesList"> {{ elem }} </li>
-        </ul>
-      </p>
-    </div>
-  </div>
-  <div style="clear: both;">
-    <div class="services_block otherShoot"ng-repeat="block in services.otherShoot.list">
-      <h1 class="h1_services"> {{ block.header }} </h1>
-      <div>
-        <img ng-src=" {{ block.imgUrl }} " alt="{{ block.header }}" />
+<div ng-controller="servicesCtrl as services">
+  <div class="wrapper">
+    <div class="services">
+      <h1 class="h1_services"> {{ services.wedding.mainHeader }} </h1>
+      <div class="services_block" ng-repeat="block in services.wedding.list">
+        <img ng-src=" {{ block.imgUrl }} " alt="{{ services.wedding.mainHeader }}" />
         <div class="services_text">
-          <ul>
-            <li ng-repeat="item in services.otherShoot.servicesList"> {{ item }} </li>
-          </ul>
+          <p><span class="services_general_text"> {{ block.header }} </span>
+            <ul>
+              <li ng-repeat="elem in block.servicesList"> {{ elem }} </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div style="clear: both;">
+        <div class="services_block otherShoot" ng-repeat="block in services.otherShoot.list">
+          <h1 class="h1_services"> {{ block.header }} </h1>
+          <div>
+            <img ng-src=" {{ block.imgUrl }} " alt="{{ block.header }}" />
+            <div class="services_text">
+              <ul>
+                <li ng-repeat="item in services.otherShoot.servicesList"> {{ item }} </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
   <!-- <div>
     <pre>
       {{ services.wedding | json }}

@@ -1,3 +1,9 @@
 <div ng-controller="seriesCtrl as series" class="session">
-  <img class="session_photo" ng-src="{{series.seria.photoSeriaUrl}}/{{photoId}}.jpg" alt="{{series.seria.name}}" / ng-repeat='photoId in series.seria.phototitles'>
+  <div class="wrapper">
+    <img class="session_photo"
+         alt="{{series.seria.name}}"
+         ng-src="{{series.seria.photoSeriaUrl}}/{{photoId}}.jpg"
+         ng-repeat="photoId in series.seria.phototitles">
+  </div>
+
 </div>
