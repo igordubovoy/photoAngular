@@ -3,25 +3,13 @@
 
   angular
     .module('myApp')
-    .controller('naviCtrl', ['$window', naviCtrl]);
+    .controller('naviCtrl', ['$window', 'myResource', naviCtrl]);
 
-  function naviCtrl($window) {
+  function naviCtrl($window, myResource) {
     var vm = this;
-    vm.headerNav = [
-                      {
-                        name: 'ГЛАВНАЯ',
-                        type: 'main'
-                      },
-                      {
-                        name: 'УСЛУГИ',
-                        type: 'services'
-                      },
-                      {
-                        name: 'КОНТАКТЫ',
-                        type: 'contacts'
-                      }
-                   ];
-
+    myResource.query({resource: 'navigation'}, function (data) {
+      vm.headerNav = data;
+    });
     function init() {
       var
         headerH = document.querySelector('header').clientHeight,

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "ГЛАВНАЯ",
+    "type": "main"
+  },
+  {
+    "name": "УСЛУГИ",
+    "type": "services"
+  },
+  {
+    "name": "КОНТАКТЫ",
+    "type": "contacts"
+  }
+]
