@@ -30,6 +30,64 @@
             }
         }
     }
+    @media (max-width: 1055px) {
+        .contact_text {
+            display: block;
+            margin: auto;
+            float: none;
+        }
+    }
+    @media (max-width: 920px) {
+        .services_block {
+            display: block;
+            margin: auto;
+            float: none;
+            width: 615px;
+            height: 290px;
+            margin-top: 5px;
+            .services_text {
+                display: inline-block;
+                padding: 60px 0 0 15px;
+                font-size: 1.1em;
+                vertical-align: top;
+            }
+        }
+        .other-shot-block {
+          padding-top: 0;
+          .services_block.otherShoot {
+            height: 343px;
+            padding: 5px 0 5px 0;
+            .services_text {
+              padding-top: 115px;
+            }
+          }
+        }
+
+    }
+    @media (max-width: 555px) {
+        .services_block {
+            height: 480px;
+            width: 300px;
+            display: block;
+            margin-bottom: 30px;
+            .services_text {
+                padding: 10px 0 0 30px;
+                display: inline-block;
+                .services_general_text {
+                  text-align: center;
+                }
+            }
+        }
+        .other-shot-block {
+          .services_block.otherShoot {
+            height: 450px;
+            .services_text {
+              padding: 10px 0 0 30px;
+            }
+          }
+        }
+
+    }
 }
 // .wedding_all {
 //     max-width: 900px;
