@@ -3,10 +3,15 @@
 
   angular
     .module('myApp')
-    .controller('contactsCtrl', ['$route', contactsCtrl]);
-  function contactsCtrl(photoDataService, $route) {
+    .controller('contactsCtrl', ['myResource', contactsCtrl]);
+  function contactsCtrl(myResource) {
     var vm = this;
-    vm.name = 'valera';
+    vm.resource = myResource;
+    vm.resource.query({ resource: 'contacts' }, function (data) {
+      vm.content = data[0];
+    }).$promise.then(function () {
+      console.log(vm.contactsContent);
+    });
   }
 
 })();

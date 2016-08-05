@@ -1,5 +1,15 @@
-<div ng-controller="contactsCtrl as app">
+<div ng-controller="contactsCtrl as contacts">
   <div class="wrapper">
-    contacts - {{app.name}}
+    <div class="contacts_info">
+      <img ng-src=" {{ contacts.content.imgUrl }} " alt="" />
+      <div class="contact_text">
+        <h1> {{ contacts.content.header }} </h1>
+        <ul>
+          <li ng-repeat="item in contacts.content.list"> {{ item }} </li>
+          <li class="tel_number"> {{ contacts.content.telTitle }} <span class="number"> {{ contacts.content.telNumber }} </span> </li>
+          <li class="social_text"> {{ contacts.content.socialText }} </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
