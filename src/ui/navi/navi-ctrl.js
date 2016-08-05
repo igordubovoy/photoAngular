@@ -6,7 +6,23 @@
     .controller('naviCtrl', ['$window', naviCtrl]);
 
   function naviCtrl($window) {
-    function fixingNavi() {
+    var vm = this;
+    vm.headerNav = [
+                      {
+                        name: 'ГЛАВНАЯ',
+                        type: 'main'
+                      },
+                      {
+                        name: 'УСЛУГИ',
+                        type: 'services'
+                      },
+                      {
+                        name: 'КОНТАКТЫ',
+                        type: 'contacts'
+                      }
+                   ];
+
+    function init() {
       var
         headerH = document.querySelector('header').clientHeight,
         menu = document.querySelector('#navigation');
@@ -18,7 +34,7 @@
         menu.style.cssText += top <= headerH ? 'top: ' + (headerH - top) + 'px; background-color: transparent' : 'top:0; background-color: white';
       }
     }
-    fixingNavi();
+    init();
   }
 
 })();

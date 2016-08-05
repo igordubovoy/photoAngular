@@ -3,14 +3,10 @@
 
   angular
     .module('myApp')
-    .controller('mainCtrl', ['$http', mainCtrl]);
-  function mainCtrl($http) {
+    .controller('mainCtrl', ['myResource', mainCtrl]);
+  function mainCtrl(myResource) {
     var vm = this;
-    vm.series = undefined;
-
-    $http.get('data/photo-data.json')
-      .success(function(data) { vm.series = data; })
-      .error(function (error) { console.error('error'); });
+    vm.series = myResource.query();
   }
 
 })();

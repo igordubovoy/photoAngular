@@ -3,11 +3,12 @@
 
   angular
     .module('myApp')
-    .config(['$routeProvider', routeProvider]);
+    .config(['$routeProvider', '$locationProvider', routeProvider]);
 
-  function routeProvider($routeProvider) {
+  function routeProvider($routeProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
     $routeProvider
-      .when('/main', {
+      .when('/', {
         templateUrl: 'src/ui/router/state-main/main-template.html'
       })
       .when('/services', {
@@ -16,11 +17,11 @@
       .when('/contacts', {
         templateUrl: 'src/ui/router/state-contacts/contacts-template.html'
       })
-      .when('/series', {
+      .when('/series/:title', {
         templateUrl: 'src/ui/router/state-series/series-template.html'
       })
       .otherwise({
-        redirectTo: '/main'
+        redirectTo: '/'
       });
   }
 

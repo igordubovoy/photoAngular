@@ -1,3 +1,29 @@
-<div ng-controller="servicesCtrl as app">
-  services - {{app.name}}
+<div ng-controller="servicesCtrl as services" class="services">
+  <h1 class="h1_services"> {{ services.wedding.mainHeader }} </h1>
+  <div class="services_block" ng-repeat="block in services.wedding.list">
+    <img ng-src=" {{ block.imgUrl }} " alt="" />
+    <div class="services_text">
+      <p><span class="services_general_text"> {{ block.header }} </span>
+        <ul>
+          <li ng-repeat="elem in block.servicesList"> {{ elem }} </li>
+        </ul>
+      </p>
+    </div>
+  </div>
+  <div ng-repeat="header in services.otherShoot.list">
+    <h1 class="h1_services"> {{ header }} </h1>
+    <div class="services_block">
+      <img ng-src="" alt="" />
+      <ul>
+        <li ng-repeat="item in services.otherShoot.servicesList"> {{ item }} </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- <div>
+    <pre>
+      {{ services.wedding | json }}
+    </pre>
+  </div> -->
+
 </div>

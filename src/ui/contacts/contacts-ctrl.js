@@ -5,7 +5,8 @@
     .module('myApp')
     .controller('contactsCtrl', ['$route', contactsCtrl]);
   function contactsCtrl(photoDataService, $route) {
-    this.name = 'valera';
+    var vm = this;
+    vm.name = 'valera';
   }
 
 })();

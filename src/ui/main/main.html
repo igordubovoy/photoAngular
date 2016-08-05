@@ -1,7 +1,7 @@
-<div ng-controller="mainCtrl as app">
+<div ng-controller="mainCtrl as main">
   <div class="gallery">
-    <div class="img_wrapper" ng-repeat="series in app.series" ng-class=" {{ series.id }} ">
-      <a href=""><img class="preview" ng-src=" {{ series.prevImgUrl }} " alt=""></a>
+    <div class="img_wrapper" ng-repeat="series in main.series" ng-class=" {{ series.id }} ">
+      <a href="/series/ {{ series.title }} "><img class="preview" ng-src=" {{ series.prevImgUrl }} " alt=" {{ series.name }} "></a>
       <div class="signature"> {{ series.name }} </div>
     </div>
   </div>
