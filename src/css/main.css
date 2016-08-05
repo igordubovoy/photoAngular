@@ -170,25 +170,6 @@ address {
 
 /*--------------------------------------------------------------------------------------------------*/
 
-#toTop {
-    width: 45px;
-    height: 45px;
-    position: fixed;
-    bottom: 60px;
-    right: 35px;
-    cursor: pointer;
-    display: none;
-    border-radius: 50%;
-    background-image: url(image/sprite/up.png);
-    background-repeat: no-repeat;
-    background-position: -3px -2px;
-    opacity: 0.5;
-}
-
-#toTop:hover {
-    opacity: 0.7;
-}
-
 .session {
     max-width: 900px;
     height: 100%;

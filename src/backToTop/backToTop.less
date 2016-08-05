@@ -1,0 +1,19 @@
+#backtop {
+  opacity: 0;
+  transition: all .4s ease-out;
+  position: fixed;
+  &.show {
+    opacity: 0.5 !important;
+  }
+  &.toTop {
+    width: 45px;
+    height: 45px;
+    bottom: 60px;
+    right: 35px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-image: url(../../assets/image/sprite/up.png);
+    background-repeat: no-repeat;
+    background-position: -3px -2px;
+  }
+}
