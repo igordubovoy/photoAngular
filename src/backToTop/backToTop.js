@@ -66,8 +66,6 @@
           }
         };
 
-        //scope.button = element.find('div');
-
         element.on('click', function() {
           scope.smoothScroll();
           element.removeClass('show');
