@@ -50,6 +50,19 @@
       "- авторская обработка всех фотографий;",
       "- передача фото в брендированной упаковке."
     ],
-    "list": ["Фотосъемка Love Story", "Индивидуальная Фотосъемка", "Фотосъемка Семейная/ Детская/ \"В ожидании\""]
+    "list": [
+      {
+        "header":"Фотосъемка Love Story",
+        "imgUrl" : "assets/image/services/circle/4.jpg"
+      },
+      {
+        "header":"Индивидуальная Фотосъемка",
+        "imgUrl" : "assets/image/services/circle/8.jpg"
+      },
+      {
+        "header":"Фотосъемка Семейная/ Детская/ \"В ожидании\"",
+        "imgUrl" : "assets/image/services/circle/13.jpg"
+      }
+    ]
   }
 ]
