@@ -1,4 +1,4 @@
 (function() {
   'use sctrict';
-  angular.module('myApp', ['ngRoute', 'ngResource', 'myBackTop']);
+  angular.module('myApp', ['ui.router', 'ngResource', 'myBackTop']);
 })();

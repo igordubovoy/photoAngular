@@ -3,7 +3,7 @@
 
   angular
     .module('myApp')
-    .controller('seriesCtrl', ['$routeParams', 'myResource', seriesCtrl]);
+    .controller('seriesCtrl', ['$stateParams', 'myResource', seriesCtrl]);
   function seriesCtrl($routeParams, myResource) {
     var vm = this;
     vm.resource = myResource;

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" ng-app="myApp">
 <head>
-  <!-- <base href="/"> -->
+  <base href="/"> 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/assets/image/logo/favicon.ico" type="image/x-icon">
   <title>Photographer Vicroria Dubovaya</title>
   <!-- include: "type": "css", "files": "src/**/*.css" -->
 </head>
-<body ng-app="myApp">
-  <div ng-view></div>
+<body>
+  <div ng-view ui-view></div>
   <back-top scroll-speed="3000"></back-top>
-  <!-- include: "type": "js", "files": ["libs/angular/angular.js", "libs/angular/angular-route.js", "libs/angular/angular-resource.js"] -->
+  <!-- include: "type": "js", "files": ["libs/angular/angular.js", "libs/angular/angular-ui-router.js", "libs/angular/angular-resource.js"] -->
   <!-- include: "type": "js", "files": ["src/**/*.js"] -->
 </body>
 </html>
