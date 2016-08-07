@@ -3,13 +3,10 @@
 
   angular
     .module('myApp')
-    .factory('myResource', ['$resource', myResource]);
+    .factory('myResource', ['$resource', 'language', myResource]);
 
-  function myResource($resource) {
-    return $resource('data/:resource.:format', {
-      resource: 'series',
-      format: 'json'
-    });
+  function myResource($resource, language) {
+    return $resource('data/'+ language +'/:resource.:format', { format: 'json' });
   }
 
 })();

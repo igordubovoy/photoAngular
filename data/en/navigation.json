@@ -1,0 +1,14 @@
+[
+  {
+    "name": "MAIN",
+    "type": "/"
+  },
+  {
+    "name": "SERVICES",
+    "type": "/services"
+  },
+  {
+    "name": "CONTACTS",
+    "type": "/contacts"
+  }
+]

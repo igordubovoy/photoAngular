@@ -6,7 +6,9 @@
     .controller('mainCtrl', ['myResource', mainCtrl]);
   function mainCtrl(myResource) {
     var vm = this;
-    vm.series = myResource.query();
+    myResource.query({ resource: 'series' }, function(data){
+			vm.series = data;
+		});
   }
 
 })();

@@ -3,12 +3,15 @@
   transition: all .4s ease-out;
   position: fixed;
   &.show {
-    opacity: 0.5 !important;
+    opacity: 0.5;
+		&:hover {
+			opacity: 0.7;
+		}
   }
   &.toTop {
     width: 45px;
     height: 45px;
-    bottom: 60px;
+    bottom: 30px;
     right: 35px;
     cursor: pointer;
     border-radius: 50%;
