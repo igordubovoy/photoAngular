@@ -8,8 +8,6 @@
   function stateProvider($stateProvider, $locationProvider, $urlRouterProvider) {
 
 	$urlRouterProvider.otherwise('/');
-  //
-  // Now set up the states
   $stateProvider
     .state('main', {
       url: '/',

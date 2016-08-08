@@ -9,8 +9,6 @@
     vm.resource = myResource;
     vm.resource.query({ resource: 'contacts' }, function (data) {
       vm.content = data[0];
-    }).$promise.then(function () {
-      console.log(vm.contactsContent);
     });
   }
 
