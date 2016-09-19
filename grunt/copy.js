@@ -28,6 +28,13 @@ module.exports = {
         src: '**/*',
         dest: 'dist/data/',
         filter: 'isFile'
+      },
+			{
+        expand: true,
+        cwd: 'analytics/',
+        src: '*.js',
+        dest: 'dist/analytics/',
+        filter: 'isFile'
       }
     ]
   },
