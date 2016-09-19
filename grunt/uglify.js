@@ -6,19 +6,13 @@ module.exports = {
       beautify: false
     },
     files: {
-      'dist/swc_scripts.min.js': [
-        'src/swc/swc.js',
-        'src/swc/**/*.js',
-        'src/app/**/*.js',
-        'src/i18n/en.js',
-        'src/binding/app_module.js',
-        'src/binding/*/**/*_module.js',
-        'src/binding/*/**/*.js',
-        'src/gui/**/*_module.js',
-        'src/gui/**/*.js',
-        'src/binding/app_controller.js',
-        'src/binding/app_config*.js',
-        'src/binding/app_run*.js'
+      'dist/libs_scripts.min.js': [
+        'bower_components/angular/angular.js',
+        'bower_components/angular-ui-router/release/angular-ui-router.js',
+        'bower_components/angular-resource/angular-resource.js'
+      ],
+			'dist/src_scripts.min.js': [
+				 'src/**/*.js'
       ]
     }
   }

@@ -7,3 +7,12 @@ dev:
     - 'copy'
     - 'less'
     - 'includeSource'
+prod:
+  description: 'Prodaction build'
+  tasks:
+    - 'clean'
+    - 'jshint'
+    - 'copy:all'
+    - 'uglify'
+    - 'less'
+    - 'includeSource'

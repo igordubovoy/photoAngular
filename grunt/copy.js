@@ -16,6 +16,24 @@ module.exports = {
         filter: 'isFile'
       },
       {
+        expand: true,
+        cwd: 'src/',
+        src: ['**/*.html'],
+        dest: 'dist/src/',
+        filter: 'isFile'
+      },
+      {
+        expand: true,
+        cwd: 'data/',
+        src: '**/*',
+        dest: 'dist/data/',
+        filter: 'isFile'
+      }
+    ]
+  },
+	dev: {
+    files: [
+      {
         src: 'bower_components/angular/angular.js',
         dest: 'dist/libs/angular/angular.js'
       },
@@ -30,15 +48,8 @@ module.exports = {
       {
         expand: true,
         cwd: 'src/',
-        src: ['**/*.html', '**/*.js'],
+        src: ['**/*.js'],
         dest: 'dist/src/',
-        filter: 'isFile'
-      },
-      {
-        expand: true,
-        cwd: 'data/',
-        src: '**/*',
-        dest: 'dist/data/',
         filter: 'isFile'
       }
     ]

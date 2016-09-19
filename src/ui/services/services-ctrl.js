@@ -17,8 +17,6 @@
             break;
         }
       });
-    }).$promise.then(function () {
-      console.log(vm.otherShoot);
     });
 
   }
