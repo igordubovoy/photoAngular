@@ -1,14 +1,14 @@
 [
   {
     "name": "ГОЛОВНА",
-    "type": "/"
+    "type": ""
   },
   {
     "name": "ПОСЛУГИ",
-    "type": "/services"
+    "type": "services"
   },
   {
     "name": "КОНТАКТИ",
-    "type": "/contacts"
+    "type": "contacts"
   }
 ]

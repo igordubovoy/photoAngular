@@ -45,8 +45,8 @@ module.exports = {
         dest: 'dist/libs/angular/angular.js'
       },
       {
-        src: 'bower_components/angular-ui-router/release/angular-ui-router.js',
-        dest: 'dist/libs/angular/angular-ui-router.js'
+        src: 'bower_components/angular-route/angular-route.js',
+        dest: 'dist/libs/angular/angular-route.js'
       },
       {
         src: 'bower_components/angular-resource/angular-resource.js',

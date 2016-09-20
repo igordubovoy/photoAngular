@@ -7,9 +7,9 @@ module.exports = {
     },
     files: {
       'dist/libs_scripts.min.js': [
-        'bower_components/angular/angular.js',
-        'bower_components/angular-ui-router/release/angular-ui-router.js',
-        'bower_components/angular-resource/angular-resource.js'
+        'bower_components/angular/angular.min.js',
+        'bower_components/angular-route/angular-route.min.js',
+        'bower_components/angular-resource/angular-resource.min.js'
       ],
 			'dist/src_scripts.min.js': [
 				 'src/**/*.js'

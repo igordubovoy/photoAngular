@@ -18,6 +18,13 @@
         }
       });
     });
+
+    function init () {
+      setTimeout(function() {
+        document.querySelector('.services').classList.add('show');
+      }, 200);
+    }
+    init();
   }
 
 })();

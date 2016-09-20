@@ -3,33 +3,27 @@
 
   angular
     .module('myApp')
-    .config(['$stateProvider', '$locationProvider', '$urlRouterProvider', stateProvider]);
+    .config(['$routeProvider', routeProvider]);
 
-  function stateProvider($stateProvider, $locationProvider, $urlRouterProvider) {
+  function routeProvider($routeProvider) {
 
-	$urlRouterProvider.otherwise('/');
-  $stateProvider
-    .state('main', {
-      url: '/',
-      templateUrl: 'src/ui/router-tmpl/state-main/main-template.html'
-    })
-		.state('services', {
-      url: '/services',
-      templateUrl: 'src/ui/router-tmpl/state-services/services-template.html'
-    })
-		.state('contacts', {
-      url: '/contacts',
-      templateUrl: 'src/ui/router-tmpl/state-contacts/contacts-template.html'
-    })
-		.state('series', {
-      url: '/series/:title',
-      templateUrl: 'src/ui/router-tmpl/state-series/series-template.html'
-    });
+      $routeProvider
+      .when('/', {
+        templateUrl: 'src/ui/router-tmpl/state-main/main-template.html'
+      })
+      .when('/services', {
+        templateUrl: 'src/ui/router-tmpl/state-services/services-template.html'
+      })
+      .when('/contacts', {
+        templateUrl: 'src/ui/router-tmpl/state-contacts/contacts-template.html'
+      })
+      .when('/series/:name*', {
+        templateUrl: 'src/ui/router-tmpl/state-series/series-template.html'
+      })
+      .otherwise({
+        redirectTo: '/'
+      });
 
-//		$locationProvider.html5Mode({
-//			enabled: true,
-//			requireBase: false
-//		});
   }
 
 })();

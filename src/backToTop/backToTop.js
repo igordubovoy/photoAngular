@@ -42,7 +42,7 @@
             return;
           }
           var speed = Math.round(scope.speed / 100);
-          var step = Math.round(distance / 25);
+          var step = Math.round(distance / 100);
           var leapY = stopY > startY ? startY + step : startY - step;
           var timer = 0;
           if (stopY > startY) {
