@@ -15,6 +15,9 @@
         }
       });
     });
+    vm.resource.query({ resource: 'signature' }, function(data){
+			vm.signature = data[0].signature;
+    });
   }
 
 })();

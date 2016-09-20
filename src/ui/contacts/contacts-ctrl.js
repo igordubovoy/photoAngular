@@ -10,6 +10,9 @@
     vm.resource.query({ resource: 'contacts' }, function (data) {
       vm.content = data[0];
     });
+    myResource.query({ resource: 'signature' }, function(data){
+      vm.signature = data[0].signature;
+    });
   }
 
 })();
