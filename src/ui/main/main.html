@@ -4,7 +4,7 @@
       <div class="img_wrapper"
            ng-repeat="series in main.series"
            ng-class=" {{ series.id }} ">
-        <a href="#/series/{{series.title}}">
+        <a href="series/{{series.title}}">
           <img class="preview"
                ng-src=" {{ series.prevImgUrl }} "
                alt=" {{ main.signature }} ">

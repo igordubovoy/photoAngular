@@ -3,10 +3,10 @@
 
   angular
     .module('myApp')
-    .config(['$routeProvider', routeProvider]);
+    .config(['$routeProvider', '$locationProvider', routeProvider]);
 
-  function routeProvider($routeProvider) {
-
+  function routeProvider($routeProvider, $locationProvider) {
+      $locationProvider.html5Mode(true);
       $routeProvider
       .when('/', {
         templateUrl: 'src/ui/router-tmpl/state-main/main-template.html'
@@ -23,7 +23,6 @@
       .otherwise({
         redirectTo: '/'
       });
-
   }
 
 })();

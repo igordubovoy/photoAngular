@@ -16,7 +16,7 @@
     function init () {
       setTimeout(function() {
         document.querySelector('.gallery').classList.add('show');
-      }, 200);
+      }, 1);
     }
     init();
   }

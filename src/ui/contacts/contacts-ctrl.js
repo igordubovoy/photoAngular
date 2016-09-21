@@ -17,7 +17,7 @@
     function init () {
       setTimeout(function() {
         document.querySelector('.contacts_info').classList.add('show');
-      }, 200);
+      }, 1);
     }
     init();
   }

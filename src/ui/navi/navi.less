@@ -31,10 +31,11 @@
     .social-wrapper {
       position: absolute;
       top: 8px;
-      right: 0;
+      right: 2%;
       width: auto;
-      height: 23px;
       .social_icon {
+        height: 23px;
+        width: 110px;
         a {
           margin: 0;
         }
@@ -77,5 +78,10 @@
             }
         }
       }
+    }
+    @media (max-width: 568px) {
+        .social-wrapper {
+          display: none;
+        }
     }
 }
