@@ -28,4 +28,54 @@
         color: rgb(154, 239, 244);
       }
     }
+    .social-wrapper {
+      position: absolute;
+      top: 8px;
+      right: 0;
+      width: auto;
+      height: 23px;
+      .social_icon {
+        a {
+          margin: 0;
+        }
+        div {
+          background-size: 120px;
+          height: 20px;
+          width: 23px;
+          transition: none;
+        }
+        .mywed {
+            background-position: 2px 0;
+            &:hover {
+                background-position: 2px 20px;
+            }
+        }
+        .fb {
+            background-position: -25px 0;
+            width: 15px;
+            &:hover {
+                background-position: -25px 20px;
+            }
+        }
+        .vk {
+            background-position: -44px 0;
+            &:hover {
+                background-position: -44px 20px;
+            }
+        }
+        .insta {
+            background-position: -68px 0;
+            &:hover {
+                background-position: -68px 20px;
+            }
+        }
+        .mail {
+            background-position: -92px 0;
+            width: 24px;
+            &:hover {
+                background-position: -92px 20px;
+            }
+        }
+      }
+    }
 }
