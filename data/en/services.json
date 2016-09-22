@@ -29,7 +29,7 @@
                 ]
       },
       {
-        "header": "Пакет \"MINI\"",
+        "header": "Package \"MINI\"",
         "imgUrl": "assets/image/services/circle/3.jpg",
         "servicesList": ["- Preliminary meeting;",
                  "- Help with selection of locations and planning time;",
@@ -52,16 +52,16 @@
     ],
     "list": [
       {
-        "header":"Love Story Photography",
-        "imgUrl" : "assets/image/services/circle/4.jpg"
+        "header": "Love Story Photography",
+        "imgUrl": "assets/image/services/circle/4.jpg"
       },
       {
-        "header":"Individual Photography",
-        "imgUrl" : "assets/image/services/circle/8.jpg"
+        "header": "Individual Photography",
+        "imgUrl": "assets/image/services/circle/8.jpg"
       },
       {
-        "header":"Family Photography/ Baby/ \"Waiting for\"",
-        "imgUrl" : "assets/image/services/circle/13.jpg"
+        "header": "Family Photography / Baby / \"Waiting for\"",
+        "imgUrl": "assets/image/services/circle/13.jpg"
       }
     ]
   }
