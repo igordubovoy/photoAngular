@@ -42,7 +42,18 @@
             return;
           }
           var speed = Math.round(scope.speed / 100);
-          var step = Math.round(distance / 100);
+					var step;
+					if (distance < 4000) {
+						step = Math.round(distance / 80);
+					} else if (distance > 4000 && distance < 8000) {
+						step = Math.round(distance / 120);
+					} else if (distance > 8000 && distance < 16000) {
+						step = Math.round(distance / 160);
+					} else if (distance > 16000 && distance < 24000) {
+						step = Math.round(distance / 200);
+					} else {
+						step = Math.round(distance / 360);
+					}
           var leapY = stopY > startY ? startY + step : startY - step;
           var timer = 0;
           if (stopY > startY) {
