@@ -28,16 +28,8 @@ module.exports = {
       'src/ui/*.tpl.html'
     ],
     tasks: [
+      'copy',
       'includeSource'
-    ]
-  },
-
-  htmlApp: {
-    files: [
-      'src/ui/**/*.html'
-    ],
-    tasks: [
-      'copy'
     ]
   }
 };
