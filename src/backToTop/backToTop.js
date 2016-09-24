@@ -50,9 +50,9 @@
 					} else if (distance > 8000 && distance < 16000) {
 						step = Math.round(distance / 160);
 					} else if (distance > 16000 && distance < 24000) {
-						step = Math.round(distance / 200);
+						step = Math.round(distance / 240);
 					} else {
-						step = Math.round(distance / 360);
+						step = Math.round(distance / 460);
 					}
           var leapY = stopY > startY ? startY + step : startY - step;
           var timer = 0;
